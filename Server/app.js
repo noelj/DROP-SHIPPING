@@ -4,7 +4,7 @@ const errorHandler = require('./middleware/erroHandler');
 
 const dotenv =require('dotenv').config()
 
-const bodyparse = require('body-parse');
+const bodyparse = require('body-parser');
 
 const mongoose = require('mongoose')
 
