@@ -4,7 +4,7 @@ const errorHandler = require('./middleware/erroHandler');
 
 const dotenv =require('dotenv').config()
 
-const bodyparse = require('body-parser');
+const bodyparser = require('body-parser');
 
 const mongoose = require('mongoose')
 
@@ -30,7 +30,6 @@ app.use(errorHandler);
 
 mongoose.connect(uri).then((result) => {
     console.log('database connected')
-   
 
 app.listen(port,()=>{
 console.log(`app running on port number ${port}`)
